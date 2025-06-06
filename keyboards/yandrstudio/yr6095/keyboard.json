@@ -16,19 +16,14 @@
     "rgblight": {
         "led_count": 1,
         "animations": {
-            "breathing": true,
-            "rainbow_mood": true,
-            "rainbow_swirl": true,
-            "snake": true,
-            "knight": true,
-            "christmas": true,
-            "static_gradient": true,
-            "rgb_test": true,
-            "alternating": true,
-            "twinkle": true
+            "static_light": true,
+            "rgb_test": true
         },
         "default": {
-            "animation": "rainbow_mood"
+            "animation": "static_light",
+            "hue": 0,
+            "sat": 0,
+            "val": 20
         },
         "layers": {
             "enabled": true,
