@@ -23,7 +23,7 @@
             "animation": "static_light",
             "hue": 0,
             "sat": 0,
-            "val": 20
+            "val": 10
         },
         "layers": {
             "enabled": true,
