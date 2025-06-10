@@ -1,7 +1,8 @@
 {
-    "manufacturer": "keebox",
     "keyboard_name": "YR6095",
     "maintainer": "Y&R Studio",
+    "manufacturer": "keebox",
+    "url": "https://www.yrkb.cc",
     "processor": "STM32F103",
     "bootloader": "stm32duino",
     "features": {
@@ -38,11 +39,11 @@
         "pin": "B5",
         "driver": "pwm"
     },
+    "diode_direction": "COL2ROW",
     "matrix_pins": {
         "cols": ["B6", "B15", "B14", "B13", "B12", "B11", "B10", "B2", "B1", "B0", "A7", "A6", "A5", "A4"],
         "rows": ["A1", "A3", "A8", "A9", "A10"]
     },
-    "diode_direction": "COL2ROW",
     "layouts": {
         "LAYOUT_60_ansi_tsangan_split_rshift": {
             "layout": [

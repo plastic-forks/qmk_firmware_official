@@ -1,31 +1,25 @@
 {
-    "manufacturer": "phdesign.cc",
     "keyboard_name": "ph60_multi",
-    "maintainer": "phdesign",
+    "maintainer": "ph.design",
+    "manufacturer": "ph.design",
+    "url": "https://phdesign.cc",
+    "processor": "RP2040",
     "bootloader": "rp2040",
-    "diode_direction": "COL2ROW",
     "features": {
         "bootmagic": true,
         "extrakey": true,
         "mousekey": true,
         "nkro": true
     },
+    "usb": {
+        "vid": "0x0000",
+        "pid": "0x0002",
+        "device_version": "2.0.1",
+    },
+    "diode_direction": "COL2ROW",
     "matrix_pins": {
         "cols": ["GP0", "GP1", "GP2", "GP3", "GP4", "GP5", "GP6", "GP7", "GP8", "GP9", "GP10", "GP11", "GP12", "GP13"],
         "rows": ["GP14", "GP15", "GP18", "GP19", "GP20"]
-    },
-    "processor": "RP2040",
-    "qmk": {
-        "locking": {
-            "enabled": true,
-            "resync": true
-        }
-    },
-    "url": "phdesign.cc",
-    "usb": {
-        "device_version": "2.0.1",
-        "pid": "0x0002",
-        "vid": "0x5048"
     },
     "layouts": {
         "LAYOUT_60_ansi_tsangan_split_rshift": {
@@ -44,6 +38,7 @@
                 {"matrix": [0, 11], "x": 11, "y": 0},
                 {"matrix": [0, 12], "x": 12, "y": 0},
                 {"matrix": [0, 13], "x": 13, "y": 0, "w": 2},
+
                 {"matrix": [1, 0], "x": 0, "y": 1, "w": 1.5},
                 {"matrix": [1, 1], "x": 1.5, "y": 1},
                 {"matrix": [1, 2], "x": 2.5, "y": 1},
@@ -58,6 +53,7 @@
                 {"matrix": [1, 11], "x": 11.5, "y": 1},
                 {"matrix": [1, 12], "x": 12.5, "y": 1},
                 {"matrix": [1, 13], "x": 13.5, "y": 1, "w": 1.5},
+
                 {"matrix": [2, 0], "x": 0, "y": 2, "w": 1.75},
                 {"matrix": [2, 1], "x": 1.75, "y": 2},
                 {"matrix": [2, 2], "x": 2.75, "y": 2},
@@ -71,6 +67,7 @@
                 {"matrix": [2, 10], "x": 10.75, "y": 2},
                 {"matrix": [2, 11], "x": 11.75, "y": 2},
                 {"matrix": [2, 12], "x": 12.75, "y": 2, "w": 2.25},
+
                 {"matrix": [3, 0], "x": 0, "y": 3, "w": 2.25},
                 {"matrix": [3, 2], "x": 2.25, "y": 3},
                 {"matrix": [3, 3], "x": 3.25, "y": 3},
@@ -84,6 +81,7 @@
                 {"matrix": [3, 11], "x": 11.25, "y": 3},
                 {"matrix": [3, 12], "x": 12.25, "y": 3, "w": 1.75},
                 {"matrix": [3, 13], "x": 14, "y": 3},
+
                 {"matrix": [4, 0], "x": 0, "y": 4, "w": 1.5},
                 {"matrix": [4, 1], "x": 1.5, "y": 4},
                 {"matrix": [4, 2], "x": 2.5, "y": 4, "w": 1.5},
