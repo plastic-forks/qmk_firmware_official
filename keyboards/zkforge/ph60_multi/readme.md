@@ -1,13 +1,13 @@
 # zkforge/ph60_multi
 
-> Note:
+> Forked from:
 >
-> -   forked from phdesign/ph60/multi
-> -   source commit: `802a199bbd5dc5a533d912b1e508a84d1de08724`
+> -   commit hash: `802a199bbd5dc5a533d912b1e508a84d1de08724`
+> -   keyboard: phdesign/ph60/multi
 
-![PromoImage](https://i.imgur.com/sUwC9mk.jpg)
+![pcb](./pcb.jpg)
 
-A 60% multi-layout supported keyboard PCB with open source keyboard case.
+A 60% multi-layout keyboard PCB.
 
 -   Keyboard Maintainer: [Team PHDesign](https://github.com/ph-design)
 -   Hardware Supported: PH60/Multi PCB
@@ -17,11 +17,11 @@ A 60% multi-layout supported keyboard PCB with open source keyboard case.
 
 Make example for this keyboard (after setting up your build environment):
 
-    make zkforge/ph60_multi:default
+    qmk compile -kb zkforge/ph60_multi -km default
 
 Flashing example for this keyboard:
 
-    make zkforge/ph60_multi:default:flash
+    qmk flash -kb zkforge/ph60_multi -km default
 
 See the [build environment setup](https://docs.qmk.fm/#/getting_started_build_tools) and the [make instructions](https://docs.qmk.fm/#/getting_started_make_guide) for more information. Brand new to QMK? Start with our [Complete Newbs Guide](https://docs.qmk.fm/#/newbs).
 
@@ -29,5 +29,6 @@ See the [build environment setup](https://docs.qmk.fm/#/getting_started_build_to
 
 Enter the bootloader in 3 ways:
 
--   **Bootmagic reset**: Hold down the key at (0,0) in the matrix (usually the top left key or Escape) and plug in the keyboard
--   **Physical reset button**: Briefly press the button on the back of the PCB - some may have pads you must short instead
+-   **Bootmagic reset**: Hold down the key at (0,0) in the matrix (usually the top left key or Escape) and plug in the keyboard.
+-   **Keycode in layout**: Press the key mapped to `QK_BOOT` if it is available.
+-   **Physical reset button**: Briefly press the button on the back of the PCB - some may have pads you must short instead.
